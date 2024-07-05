@@ -49,3 +49,7 @@ module.exports = {
   // other rules...
 }
 ```
+## Add essential npm packages
+
+- Install @hookform/resolvers, axios, bootstrap, immer, react-hook-form, react-icons, zod
+  `npm i @hookform/resolvers axios bootstrap immer react-hook-form react-icons zod`
