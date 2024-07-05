@@ -10,9 +10,15 @@ module.exports = {
     'plugin:react/jsx-runtime',
     'plugin:prettier/recommended'
   ],
-  ignorePatterns: ['dist', '.eslintrc.cjs'],
+  ignorePatterns: ['dist', '.eslintrc.cjs', 'vite-env.d.ts'],
   parser: '@typescript-eslint/parser',
   plugins: ['react-refresh'],
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
+    tsconfigRootDir: __dirname,
+  },
   rules: {
     'react-refresh/only-export-components': [
       'warn',
@@ -33,9 +39,15 @@ module.exports = {
       },
     ],
     "react/react-in-jsx-scope": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "@typescript-eslint/consistent-indexed-object-style": "off",
     "@typescript-eslint/explicit-function-return-type": "error",
+    "@typescript-eslint/no-confusing-void-expression": "off",
     "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/prefer-nullish-coalescing": "off",
+    "@typescript-eslint/restrict-template-expressions": "off",
+    "@typescript-eslint/use-unknown-in-catch-callback-variable": "off",
     "array-bracket-newline": "off",
     "array-bracket-spacing": "error",
     "array-callback-return": "warn",
@@ -277,11 +289,5 @@ module.exports = {
     "wrap-regex": "error",
     "yield-star-spacing": "error",
     yoda: ["error", "never"],
-  },
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
   },
 }
