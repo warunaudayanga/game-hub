@@ -12,7 +12,7 @@ const App = (): React.JSX.Element => {
     return (
         <>
             <Grid
-                h="100vh"
+                // h="100vh"
                 templateAreas={{
                     base: '"header" "main"',
                     lg: '"header header" "aside main"',
@@ -29,14 +29,25 @@ const App = (): React.JSX.Element => {
                     <NavBar onSearch={search => setFilters({ ...filters, search })}></NavBar>
                 </GridItem>
                 <Show above="lg">
-                    <GridItem area="aside" h="calc(100vh - 70px)" overflowY="auto" paddingX={5}>
+                    <GridItem
+                        area="aside"
+                        paddingX={5}
+                        mt={16}
+                        // // h="calc(100vh - 70px)"
+                        // overflowY="auto"
+                    >
                         <GenreList
                             selectedGenre={filters.genre}
                             onSelectGenre={genre => setFilters({ ...filters, genre })}
                         />
                     </GridItem>
                 </Show>
-                <GridItem area="main" h="calc(100vh - 70px)" overflowY="auto">
+                <GridItem
+                    area="main"
+                    mt={16}
+                    // h="calc(100vh - 70px)"
+                    // overflowY="auto"
+                >
                     <VStack h="100%" alignItems="start" paddingX={{ base: 3, md: 5 }}>
                         <GameHeading filters={filters} />
                         <HStack w="100%" justifyContent={{ base: "center", md: "start" }} spacing={5} marginBottom={5}>
