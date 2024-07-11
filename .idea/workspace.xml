@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_INJECTED_CODE" value="false" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="141e1bdd-58ef-4622-a69c-49d5054861f5" name="Changes" comment="stable 2">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants/constants.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/platforms.data.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/queries/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/queries/use-games.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/queries/use-genres.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/pagination.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/react-query.interfaces.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/platform.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/game-hub.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PlatformSelector.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PlatformSelector.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/GameGrid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/GameGrid.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/genre/GenreList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/genre/GenreList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/genres.data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/genres.data.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/use-data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/use-data.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/use-games.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/use-games.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/use-genres.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/use-platforms.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/queries/use-platforms.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/game-filters.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/game-filters.interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/hook.interfaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/hook.interfaces.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/response.interfaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/response.interfaces.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/genre.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/genre.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/http.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/http.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/index.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="init" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1720220302" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="init" />
+                    <option name="lastUsedInstant" value="1720166049" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="b0bdd297-4de9-46cb-8cda-d34236f80282" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2ioidsQjl96sI3UgrzRpnYU85rB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "javascript.nodejs.core.library.configured.version": "20.12.1",
+    "javascript.nodejs.core.library.typings.version": "20.12.14",
+    "last_opened_file_path": "C:/Workspace/Personal/Web/game-hub/src/hooks/queries",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.build.executor": "Run",
+    "npm.dev.executor": "Run",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
+    "ts.external.directory.path": "C:\\Workspace\\Personal\\Web\\game-hub\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Workspace\Personal\Web\game-hub\src\hooks\queries" />
+      <recent name="C:\Workspace\Personal\Web\game-hub\src\data" />
+      <recent name="C:\Workspace\Personal\Web\game-hub\src\services" />
+      <recent name="C:\Workspace\Personal\Web\game-hub\src\interfaces" />
+      <recent name="C:\Workspace\Personal\Web\game-hub\.idea" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Workspace\Personal\Web\game-hub\src\hooks\queries" />
+      <recent name="C:\Workspace\Personal\Web\game-hub\src\components\games" />
+      <recent name="C:\Workspace\Personal\Web\game-hub\src\components\genre" />
+      <recent name="C:\Workspace\Personal\Web\game-hub\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.dev">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.18034.50" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="141e1bdd-58ef-4622-a69c-49d5054861f5" name="Changes" comment="" />
+      <created>1720163420918</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1720163420918</updated>
+      <workItem from="1720163422001" duration="2258000" />
+      <workItem from="1720165695856" duration="1359000" />
+      <workItem from="1720182352458" duration="14523000" />
+      <workItem from="1720197794554" duration="22222000" />
+      <workItem from="1720279423641" duration="1415000" />
+      <workItem from="1720617091190" duration="282000" />
+      <workItem from="1720723826071" duration="19000" />
+      <workItem from="1720723849151" duration="35000" />
+      <workItem from="1720723889625" duration="35000" />
+      <workItem from="1720723928636" duration="26000" />
+      <workItem from="1720723959159" duration="17000" />
+      <workItem from="1720723980851" duration="53000" />
+      <workItem from="1720724042348" duration="317000" />
+      <workItem from="1720724364667" duration="5000" />
+      <workItem from="1720724408803" duration="10811000" />
+    </task>
+    <task id="LOCAL-00001" summary="init">
+      <option name="closed" value="true" />
+      <created>1720165619836</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1720165619836</updated>
+    </task>
+    <task id="LOCAL-00002" summary="init">
+      <option name="closed" value="true" />
+      <created>1720165828823</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1720165828823</updated>
+    </task>
+    <task id="LOCAL-00003" summary="essentials">
+      <option name="closed" value="true" />
+      <created>1720166128533</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1720166128533</updated>
+    </task>
+    <task id="LOCAL-00004" summary="stable">
+      <option name="closed" value="true" />
+      <created>1720220414113</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1720220414113</updated>
+    </task>
+    <task id="LOCAL-00005" summary="stable">
+      <option name="closed" value="true" />
+      <created>1720220860591</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1720220860591</updated>
+    </task>
+    <task id="LOCAL-00006" summary="stable">
+      <option name="closed" value="true" />
+      <created>1720221022995</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1720221022995</updated>
+    </task>
+    <task id="LOCAL-00007" summary="stable 2">
+      <option name="closed" value="true" />
+      <created>1720280702093</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1720280702093</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="init" />
+    <MESSAGE value="essentials" />
+    <MESSAGE value="stable" />
+    <MESSAGE value="stable 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="stable 2" />
+  </component>
+</project>

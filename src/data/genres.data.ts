@@ -1,9 +1,9 @@
 /* eslint-disable camelcase */
 // noinspection SpellCheckingInspection
 
-import { Genre } from "../interfaces";
+import { Genre, ListFetchResponse } from "../interfaces";
 
-export const genres: (Genre & { [key: string]: unknown })[] = [
+export const results: (Genre & { [key: string]: unknown })[] = [
     {
         id: 4,
         name: "Action",
@@ -860,3 +860,5 @@ export const genres: (Genre & { [key: string]: unknown })[] = [
         ],
     },
 ];
+
+export const defaultGenres: ListFetchResponse<Genre> = { count: results.length, results, next: null };

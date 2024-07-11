@@ -5,7 +5,8 @@ export interface GetAllResponse<T> {
     cancel: () => void;
 }
 
-export interface DataResponse<T> {
+export interface ListFetchResponse<T> {
     count: number;
+    next: string | null;
     results: T[];
 }

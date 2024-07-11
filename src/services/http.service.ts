@@ -1,13 +1,14 @@
 // noinspection JSUnusedGlobalSymbols,Annotator
 
-import httpClient, { AxiosResponse } from "./http-client";
-import { GetAllResponse } from "../interfaces";
+import httpClient from "./http-client";
+import { ListFetchResponse, GetAllResponse } from "../interfaces";
 import { AxiosRequestConfig } from "axios";
+import { Pagination } from "../interfaces/pagination.interface.ts";
 
 export class HttpService<Entity> {
     constructor(private endpoint: string) {}
 
-    getAll<T>(requestConfig?: AxiosRequestConfig): GetAllResponse<T> {
+    getAllWithCancel<T>(requestConfig?: AxiosRequestConfig): GetAllResponse<T> {
         const controller = new AbortController();
         const request = httpClient.get<T>(this.endpoint, {
             signal: controller.signal,
@@ -21,20 +22,36 @@ export class HttpService<Entity> {
         };
     }
 
-    get(id: number): Promise<AxiosResponse<Entity>> {
-        return httpClient.get<Entity>(`${this.endpoint}/${id}`);
+    async getAll<T extends Pagination>(filters?: T): Promise<ListFetchResponse<Entity>> {
+        const { page, pageSize, ...rest } = filters || {};
+        const params = {
+            page: page && pageSize ? page : undefined,
+            // eslint-disable-next-line camelcase
+            page_size: page && pageSize ? pageSize : undefined,
+            ...rest,
+        };
+        const res = await httpClient.get<ListFetchResponse<Entity>>(this.endpoint, { params });
+        return res.data;
     }
 
-    create<T>(dto: T): Promise<AxiosResponse<Entity>> {
-        return httpClient.post<Entity>(this.endpoint, dto);
+    async get(id: number): Promise<Entity> {
+        const res = await httpClient.get<Entity>(`${this.endpoint}/${id}`);
+        return res.data;
     }
 
-    update<T>(id: number, dto: T): Promise<AxiosResponse<Entity>> {
-        return httpClient.patch<Entity>(`${this.endpoint}/${id}`, dto);
+    async create<T>(dto: T): Promise<Entity> {
+        const res = await httpClient.post<Entity>(this.endpoint, dto);
+        return res.data;
     }
 
-    delete(id: number): Promise<AxiosResponse<Entity>> {
-        return httpClient.delete(`${this.endpoint}/${id}`);
+    async update<T>(id: number, dto: T): Promise<Entity> {
+        const res = await httpClient.patch<Entity>(`${this.endpoint}/${id}`, dto);
+        return res.data;
+    }
+
+    async delete(id: number): Promise<Entity> {
+        const res = await httpClient.delete<Entity>(`${this.endpoint}/${id}`);
+        return res.data;
     }
 }
 

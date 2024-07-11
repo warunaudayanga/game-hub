@@ -36,7 +36,7 @@ export const GenreList = ({ selectedGenre, onSelectGenre }: Props): React.JSX.El
                             <GenreItemSkeleton></GenreItemSkeleton>
                         </GenreItemContainer>
                     ))}
-                {genres.length && (
+                {genres?.results.length && (
                     <GenreItemContainer key={0}>
                         <GenreItem
                             genre={{ id: 0, name: "All Genres", slug: "" }}
@@ -45,15 +45,16 @@ export const GenreList = ({ selectedGenre, onSelectGenre }: Props): React.JSX.El
                         ></GenreItem>
                     </GenreItemContainer>
                 )}
-                {genres.map(genre => (
-                    <GenreItemContainer key={genre.id}>
-                        <GenreItem
-                            genre={genre}
-                            selectedGenre={selectedGenre}
-                            onSelectGenre={onSelectGenre}
-                        ></GenreItem>
-                    </GenreItemContainer>
-                ))}
+                {genres?.results.length &&
+                    genres.results.map(genre => (
+                        <GenreItemContainer key={genre.id}>
+                            <GenreItem
+                                genre={genre}
+                                selectedGenre={selectedGenre}
+                                onSelectGenre={onSelectGenre}
+                            ></GenreItem>
+                        </GenreItemContainer>
+                    ))}
             </List>
         </>
     );
