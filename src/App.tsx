@@ -5,10 +5,10 @@ import { GameGrid, GenreList, NavBar } from "./components";
 import { PlatformSelector } from "./components/PlatformSelector.tsx";
 import { GameFilters } from "./interfaces";
 import { SortSelector } from "./components/SortSelector.tsx";
-import { GameHeading } from "./components/GameHeading.tsx";
+import { GameHeading } from "./components/games/GameHeading.tsx";
 
 const App = (): React.JSX.Element => {
-    const [filters, setFilters] = useState<GameFilters>({ genre: null, platform: null, sort: null, search: null });
+    const [filters, setFilters] = useState<GameFilters>({});
     return (
         <>
             <Grid
@@ -26,7 +26,7 @@ const App = (): React.JSX.Element => {
                 }}
             >
                 <GridItem area="header">
-                    <NavBar onSearch={search => setFilters({ ...filters, search })}></NavBar>
+                    <NavBar onSearch={search => setFilters({ ...filters, keyword: search })}></NavBar>
                 </GridItem>
                 <Show above="lg">
                     <GridItem
@@ -37,8 +37,8 @@ const App = (): React.JSX.Element => {
                         // overflowY="auto"
                     >
                         <GenreList
-                            selectedGenre={filters.genre}
-                            onSelectGenre={genre => setFilters({ ...filters, genre })}
+                            selectedGenreId={filters.genreId}
+                            onSelectGenre={genre => setFilters({ ...filters, genreId: genre })}
                         />
                     </GridItem>
                 </Show>
@@ -52,12 +52,12 @@ const App = (): React.JSX.Element => {
                         <GameHeading filters={filters} />
                         <HStack w="100%" justifyContent={{ base: "center", md: "start" }} spacing={5} marginBottom={5}>
                             <PlatformSelector
-                                selectedPlatform={filters.platform}
-                                onSelectPlatform={platform => setFilters({ ...filters, platform })}
+                                selectedPlatformId={filters.platformId}
+                                onSelectPlatform={platform => setFilters({ ...filters, platformId: platform?.id })}
                             />
                             <SortSelector
-                                selectedSortOption={filters.sort}
-                                onSort={sort => setFilters({ ...filters, sort })}
+                                selectedSortOption={filters.sortBy}
+                                onSort={sort => setFilters({ ...filters, sortBy: sort })}
                             />
                         </HStack>
                         <GameGrid filters={filters}></GameGrid>

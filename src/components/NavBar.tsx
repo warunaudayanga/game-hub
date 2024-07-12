@@ -5,7 +5,7 @@ import { ColorModeSwitch } from "./ColorModeSwitch.tsx";
 import { SearchInput } from "./SearchInput.tsx";
 
 interface Props {
-    onSearch: (keyword: string | null) => void;
+    onSearch: (keyword?: string) => void;
 }
 
 export const NavBar = ({ onSearch }: Props): React.JSX.Element => {

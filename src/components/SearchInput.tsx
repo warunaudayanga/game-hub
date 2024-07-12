@@ -4,7 +4,7 @@ import { BsSearch } from "react-icons/bs";
 import { FaTimes } from "react-icons/fa";
 
 interface Props {
-    onSearch: (keyword: string | null) => void;
+    onSearch: (keyword?: string) => void;
 }
 
 let timeout: number;
@@ -15,7 +15,7 @@ export const SearchInput = ({ onSearch }: Props): React.JSX.Element => {
         setKeyword(event.target.value);
         clearTimeout(timeout);
         timeout = setTimeout(() => {
-            onSearch(event.target.value || null);
+            onSearch(event.target.value);
         }, 700);
     };
 
@@ -32,7 +32,7 @@ export const SearchInput = ({ onSearch }: Props): React.JSX.Element => {
                         _hover={{ bg: "transparent" }}
                         onClick={() => {
                             setKeyword("");
-                            onSearch(null);
+                            onSearch(undefined);
                         }}
                     >
                         <FaTimes />

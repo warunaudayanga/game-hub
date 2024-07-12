@@ -5,14 +5,13 @@ import { Heading, List } from "@chakra-ui/react";
 import { GenreItemContainer } from "./GenreItemContainer.tsx";
 import { GenreItem } from "./GenreItem.tsx";
 import { GenreItemSkeleton } from "./GenreItemSkeleton.tsx";
-import { Genre } from "../../interfaces";
 
 interface Props {
-    selectedGenre: Genre | null;
-    onSelectGenre: (genre: Genre | null) => void;
+    selectedGenreId?: number;
+    onSelectGenre: (genre?: number) => void;
 }
 
-export const GenreList = ({ selectedGenre, onSelectGenre }: Props): React.JSX.Element | null => {
+export const GenreList = ({ selectedGenreId, onSelectGenre }: Props): React.JSX.Element | null => {
     const { genres, isLoading, error } = useGenres();
     // const bg = useColorModeValue("white", "gray.800");
     const skeletons = [...Array.from(Array(20).keys()).map(i => i + 1)];
@@ -40,8 +39,8 @@ export const GenreList = ({ selectedGenre, onSelectGenre }: Props): React.JSX.El
                     <GenreItemContainer key={0}>
                         <GenreItem
                             genre={{ id: 0, name: "All Genres", slug: "" }}
-                            selectedGenre={selectedGenre}
-                            onSelectGenre={() => onSelectGenre(null)}
+                            selectedGenreId={selectedGenreId}
+                            onSelectGenre={() => onSelectGenre(undefined)}
                         ></GenreItem>
                     </GenreItemContainer>
                 )}
@@ -50,7 +49,7 @@ export const GenreList = ({ selectedGenre, onSelectGenre }: Props): React.JSX.El
                         <GenreItemContainer key={genre.id}>
                             <GenreItem
                                 genre={genre}
-                                selectedGenre={selectedGenre}
+                                selectedGenreId={selectedGenreId}
                                 onSelectGenre={onSelectGenre}
                             ></GenreItem>
                         </GenreItemContainer>

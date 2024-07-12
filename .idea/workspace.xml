@@ -7,38 +7,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="141e1bdd-58ef-4622-a69c-49d5054861f5" name="Changes" comment="stable 2">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constants/constants.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/platforms.data.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/queries/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/queries/use-games.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/queries/use-genres.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaces/pagination.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaces/react-query.interfaces.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/platform.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/game-hub.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+    <list default="true" id="141e1bdd-58ef-4622-a69c-49d5054861f5" name="Changes" comment="Add react query and infinite pagination">
+      <change afterPath="$PROJECT_DIR$/src/components/games/GameHeading.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/queries/use-genre.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/queries/use-platform.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GameHeading.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PlatformSelector.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PlatformSelector.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchInput.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SortSelector.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SortSelector.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/GameCardSkeleton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/GameCardSkeleton.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/games/GameGrid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/GameGrid.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/genre/GenreItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/genre/GenreItem.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/genre/GenreList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/genre/GenreList.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/genres.data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/genres.data.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/use-data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/use-data.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/use-games.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/use-games.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/use-genres.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/use-platforms.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/queries/use-platforms.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/platforms.data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/platforms.data.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/queries/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/queries/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/queries/use-games.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/queries/use-games.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/queries/use-genres.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/queries/use-genres.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/queries/use-platforms.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/queries/use-platforms.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/interfaces/game-filters.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/game-filters.interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/hook.interfaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/hook.interfaces.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/interfaces/response.interfaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/response.interfaces.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/genre.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/genre.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/http.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/http.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/sort-options.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/sort-options.interface.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +84,7 @@
     <option name="defaultAccountId" value="b0bdd297-4de9-46cb-8cda-d34236f80282" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -101,29 +95,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "javascript.nodejs.core.library.configured.version": "20.12.1",
-    "javascript.nodejs.core.library.typings.version": "20.12.14",
-    "last_opened_file_path": "C:/Workspace/Personal/Web/game-hub/src/hooks/queries",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.build.executor": "Run",
-    "npm.dev.executor": "Run",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
-    "ts.external.directory.path": "C:\\Workspace\\Personal\\Web\\game-hub\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.12.1&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.12.14&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Workspace/Personal/Web/game-hub/src/hooks/queries&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.build.executor&quot;: &quot;Run&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Workspace\\Personal\\Web\\game-hub\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Workspace\Personal\Web\game-hub\src\hooks\queries" />
@@ -133,8 +127,8 @@
       <recent name="C:\Workspace\Personal\Web\game-hub\.idea" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Workspace\Personal\Web\game-hub\src\hooks\queries" />
       <recent name="C:\Workspace\Personal\Web\game-hub\src\components\games" />
+      <recent name="C:\Workspace\Personal\Web\game-hub\src\hooks\queries" />
       <recent name="C:\Workspace\Personal\Web\game-hub\src\components\genre" />
       <recent name="C:\Workspace\Personal\Web\game-hub\src" />
     </key>
@@ -196,7 +190,10 @@
       <workItem from="1720723980851" duration="53000" />
       <workItem from="1720724042348" duration="317000" />
       <workItem from="1720724364667" duration="5000" />
-      <workItem from="1720724408803" duration="10811000" />
+      <workItem from="1720724408803" duration="11047000" />
+      <workItem from="1720754386199" duration="1192000" />
+      <workItem from="1720775142286" duration="28000" />
+      <workItem from="1720777820694" duration="5751000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -254,7 +251,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720280702093</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add react query and infinite pagination">
+      <option name="closed" value="true" />
+      <created>1720735524098</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1720735524098</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,6 +273,7 @@
     <MESSAGE value="essentials" />
     <MESSAGE value="stable" />
     <MESSAGE value="stable 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="stable 2" />
+    <MESSAGE value="Add react query and infinite pagination" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add react query and infinite pagination" />
   </component>
 </project>

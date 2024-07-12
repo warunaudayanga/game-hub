@@ -6,11 +6,11 @@ import gameSvg from "../../assets/game.svg";
 
 interface Props {
     genre: Genre;
-    selectedGenre: Genre | null;
-    onSelectGenre: (genre: Genre) => void;
+    selectedGenreId?: number;
+    onSelectGenre: (genre?: number) => void;
 }
 
-export const GenreItem = ({ genre, selectedGenre, onSelectGenre }: Props): React.JSX.Element => {
+export const GenreItem = ({ genre, selectedGenreId, onSelectGenre }: Props): React.JSX.Element => {
     return (
         <HStack>
             <Image
@@ -23,8 +23,8 @@ export const GenreItem = ({ genre, selectedGenre, onSelectGenre }: Props): React
             <Button
                 fontSize="lg"
                 variant="link"
-                fontWeight={selectedGenre?.id === genre.id ? "bold" : "normal"}
-                onClick={() => onSelectGenre(genre)}
+                fontWeight={selectedGenreId === genre.id ? "bold" : "normal"}
+                onClick={() => onSelectGenre(genre.id)}
             >
                 {genre.name}
             </Button>

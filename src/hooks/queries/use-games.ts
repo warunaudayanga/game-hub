@@ -3,6 +3,7 @@ import { InfiniteData, QueryFunctionContext, useInfiniteQuery, UseInfiniteQueryR
 import { Game, GameFilters, ListFetchResponse } from "../../interfaces";
 import { gameService } from "../../services";
 import { CACHE_KEY_GAMES } from "../../constants/constants.ts";
+import ms from "ms";
 
 export const useGames = (
     filters: GameFilters,
@@ -15,13 +16,13 @@ export const useGames = (
             return gameService.getAll({
                 ...filters,
                 page: pageParam as number,
-                parent_platforms: filters.platform?.id,
-                genres: filters.genre?.id,
-                ordering: filters.sort,
-                search: filters.search,
+                parent_platforms: filters.platformId,
+                genres: filters.genreId,
+                ordering: filters.sortBy,
+                search: filters.keyword,
             });
         },
-        staleTime: 1, // 1 minute
+        staleTime: ms("24h"),
         initialPageParam: 1,
         getNextPageParam: (lastPage, allPages) => {
             return lastPage.next ? allPages.length + 1 : undefined;
