@@ -1,7 +1,7 @@
-import React from "react";
+import { JSX } from "react";
 import { Card, CardBody, Skeleton, SkeletonText } from "@chakra-ui/react";
 
-export const GameCardSkeleton = (): React.JSX.Element => {
+export const GameCardSkeleton = (): JSX.Element => {
     return (
         <Card h="100%">
             <Skeleton height="150px"></Skeleton>

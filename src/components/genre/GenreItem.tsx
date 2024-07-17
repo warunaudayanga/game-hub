@@ -1,4 +1,4 @@
-import React from "react";
+import { JSX } from "react";
 import { Button, HStack, Image } from "@chakra-ui/react";
 import { Genre } from "../../interfaces";
 import { getCroppedImageUrl } from "../../services";
@@ -6,11 +6,11 @@ import gameSvg from "../../assets/game.svg";
 
 interface Props {
     genre: Genre;
-    selectedGenreId?: number;
+    isSelected?: boolean;
     onSelectGenre: (genre?: number) => void;
 }
 
-export const GenreItem = ({ genre, selectedGenreId, onSelectGenre }: Props): React.JSX.Element => {
+export const GenreItem = ({ genre, isSelected, onSelectGenre }: Props): JSX.Element => {
     return (
         <HStack>
             <Image
@@ -23,7 +23,7 @@ export const GenreItem = ({ genre, selectedGenreId, onSelectGenre }: Props): Rea
             <Button
                 fontSize="lg"
                 variant="link"
-                fontWeight={selectedGenreId === genre.id ? "bold" : "normal"}
+                fontWeight={isSelected ? "bold" : "normal"}
                 onClick={() => onSelectGenre(genre.id)}
             >
                 {genre.name}

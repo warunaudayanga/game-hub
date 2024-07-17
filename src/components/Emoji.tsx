@@ -1,4 +1,4 @@
-import React from "react";
+import { JSX } from "react";
 
 import bullsEye from "../assets/bulls-eye.webp";
 import thumbsUp from "../assets/thumbs-up.webp";
@@ -9,7 +9,7 @@ interface Props extends ImageProps {
     rating: number;
 }
 
-export const Emoji = ({ rating, ...props }: Props): React.JSX.Element | null => {
+export const Emoji = ({ rating, ...props }: Props): JSX.Element | null => {
     if (rating < 3) return null;
 
     const emojiMap: { [key: number]: ImageProps } = {

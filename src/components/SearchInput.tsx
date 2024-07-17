@@ -1,21 +1,20 @@
-import React, { useState } from "react";
+import { ChangeEvent, JSX, useState } from "react";
 import { Button, Input, InputGroup, InputLeftElement, InputRightElement } from "@chakra-ui/react";
 import { BsSearch } from "react-icons/bs";
 import { FaTimes } from "react-icons/fa";
+import { useGameFiltersState } from "../store/game-filter.state.ts";
 
-interface Props {
-    onSearch: (keyword?: string) => void;
-}
+let timeout: ReturnType<typeof setTimeout>;
 
-let timeout: number;
-
-export const SearchInput = ({ onSearch }: Props): React.JSX.Element => {
+export const SearchInput = (): JSX.Element => {
     const [keyword, setKeyword] = useState<string>("");
-    const handleSearch = (event: React.ChangeEvent<HTMLInputElement>): void => {
+    const setSearch = useGameFiltersState(state => state.setSearch);
+
+    const handleSearch = (event: ChangeEvent<HTMLInputElement>): void => {
         setKeyword(event.target.value);
         clearTimeout(timeout);
         timeout = setTimeout(() => {
-            onSearch(event.target.value);
+            setSearch(keyword);
         }, 700);
     };
 
@@ -32,7 +31,7 @@ export const SearchInput = ({ onSearch }: Props): React.JSX.Element => {
                         _hover={{ bg: "transparent" }}
                         onClick={() => {
                             setKeyword("");
-                            onSearch(undefined);
+                            setSearch(undefined);
                         }}
                     >
                         <FaTimes />

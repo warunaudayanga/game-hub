@@ -1,7 +1,7 @@
-import React from "react";
+import { JSX } from "react";
 import { HStack, Skeleton, SkeletonText } from "@chakra-ui/react";
 
-export const GenreItemSkeleton = (): React.JSX.Element => {
+export const GenreItemSkeleton = (): JSX.Element => {
     return (
         <HStack>
             <Skeleton h="32px" w="32px" borderRadius={8}></Skeleton>

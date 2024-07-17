@@ -1,3 +1,5 @@
+// noinspection JSUnusedGlobalSymbols
+
 export interface InfinitePagination {
     pageSize?: number;
 }

@@ -1,20 +1,19 @@
 /* eslint-disable camelcase */
-import React from "react";
+import { JSX } from "react";
 import { useGenres } from "../../hooks";
 import { Heading, List } from "@chakra-ui/react";
 import { GenreItemContainer } from "./GenreItemContainer.tsx";
 import { GenreItem } from "./GenreItem.tsx";
 import { GenreItemSkeleton } from "./GenreItemSkeleton.tsx";
+import { useGameFiltersState } from "../../store/game-filter.state.ts";
 
-interface Props {
-    selectedGenreId?: number;
-    onSelectGenre: (genre?: number) => void;
-}
-
-export const GenreList = ({ selectedGenreId, onSelectGenre }: Props): React.JSX.Element | null => {
+export const GenreList = (): JSX.Element | null => {
     const { genres, isLoading, error } = useGenres();
     // const bg = useColorModeValue("white", "gray.800");
     const skeletons = [...Array.from(Array(20).keys()).map(i => i + 1)];
+
+    const genreId = useGameFiltersState(state => state.filters.genreId);
+    const setGenreId = useGameFiltersState(state => state.setGenreId);
 
     if (error) return null;
 
@@ -39,8 +38,8 @@ export const GenreList = ({ selectedGenreId, onSelectGenre }: Props): React.JSX.
                     <GenreItemContainer key={0}>
                         <GenreItem
                             genre={{ id: 0, name: "All Genres", slug: "" }}
-                            selectedGenreId={selectedGenreId}
-                            onSelectGenre={() => onSelectGenre(undefined)}
+                            isSelected={!genreId}
+                            onSelectGenre={() => setGenreId()}
                         ></GenreItem>
                     </GenreItemContainer>
                 )}
@@ -49,8 +48,8 @@ export const GenreList = ({ selectedGenreId, onSelectGenre }: Props): React.JSX.
                         <GenreItemContainer key={genre.id}>
                             <GenreItem
                                 genre={genre}
-                                selectedGenreId={selectedGenreId}
-                                onSelectGenre={onSelectGenre}
+                                isSelected={genreId === genre.id}
+                                onSelectGenre={setGenreId}
                             ></GenreItem>
                         </GenreItemContainer>
                     ))}

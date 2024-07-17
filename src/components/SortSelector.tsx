@@ -1,15 +1,10 @@
-import React from "react";
+import { JSX } from "react";
 import { Button, Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react";
 import { BsChevronDown } from "react-icons/bs";
 import { SortOption } from "../interfaces";
-import { SortBy } from "../types/sort-by.type.ts";
+import { useGameFiltersState } from "../store/game-filter.state.ts";
 
-interface Props {
-    selectedSortOption?: SortBy;
-    onSort: (sortBy?: SortBy) => void;
-}
-
-export const SortSelector = ({ selectedSortOption, onSort }: Props): React.JSX.Element | null => {
+export const SortSelector = (): JSX.Element | null => {
     const sortOptions: SortOption[] = [
         { label: "Relevance" },
         { label: "Name", value: "name" },
@@ -18,14 +13,18 @@ export const SortSelector = ({ selectedSortOption, onSort }: Props): React.JSX.E
         { label: "Average Rating", value: "-rating" },
         { label: "Popularity", value: "-metacritic" },
     ];
+
+    const sortBy = useGameFiltersState(state => state.filters.sortBy);
+    const setSortBy = useGameFiltersState(state => state.setSortBy);
+
     return (
         <Menu>
             <MenuButton as={Button} rightIcon={<BsChevronDown />}>
-                Order By: {sortOptions.find(o => o.value === selectedSortOption)!.label}
+                Order By: {sortOptions.find(o => o.value === sortBy)!.label}
             </MenuButton>
             <MenuList>
                 {sortOptions.map((sortOption, index) => (
-                    <MenuItem key={index} onClick={() => onSort(sortOption.value)}>
+                    <MenuItem key={index} onClick={() => setSortBy(sortOption.value)}>
                         {sortOption.label}
                     </MenuItem>
                 ))}

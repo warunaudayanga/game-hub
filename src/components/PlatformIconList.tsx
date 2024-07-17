@@ -1,4 +1,4 @@
-import React from "react";
+import { JSX } from "react";
 import { HStack, Icon } from "@chakra-ui/react";
 import { FaAndroid, FaApple, FaLinux, FaPlaystation, FaWindows, FaXbox } from "react-icons/fa";
 import { SiNintendo } from "react-icons/si";
@@ -11,7 +11,7 @@ interface Props {
     platforms?: Platform[];
 }
 
-export const PlatformIconList = ({ platforms }: Props): React.JSX.Element => {
+export const PlatformIconList = ({ platforms }: Props): JSX.Element => {
     const iconMap: { [key: string]: IconType } = {
         pc: FaWindows,
         playstation: FaPlaystation,

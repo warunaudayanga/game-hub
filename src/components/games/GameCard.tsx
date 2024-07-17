@@ -1,4 +1,4 @@
-import React from "react";
+import { JSX } from "react";
 import { Game } from "../../interfaces";
 import { Card, CardBody, Heading, HStack, Image, VStack } from "@chakra-ui/react";
 import { PlatformIconList } from "../PlatformIconList.tsx";
@@ -11,7 +11,7 @@ interface Props {
     game: Game;
 }
 
-export const GameCard = ({ game }: Props): React.JSX.Element => {
+export const GameCard = ({ game }: Props): JSX.Element => {
     return (
         <Card h="100%">
             <Image src={getCroppedImageUrl(game.background_image) || gameSvg}></Image>

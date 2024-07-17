@@ -1,16 +1,17 @@
-import React from "react";
+import { JSX } from "react";
 import { Heading } from "@chakra-ui/react";
-import { GameFilters } from "../../interfaces";
 import { useGenre, usePlatform } from "../../hooks";
+import { useGameFiltersState } from "../../store/game-filter.state.ts";
 
-interface Props {
-    filters: GameFilters;
-}
+export const GameHeading = (): JSX.Element => {
+    const genreId = useGameFiltersState(state => state.filters.genreId);
+    const genreName = useGenre(genreId)?.name;
 
-export const GameHeading = ({ filters }: Props): React.JSX.Element => {
-    const genreName = useGenre(filters.genreId)?.name;
-    const platformName = usePlatform(filters.platformId)?.name;
+    const platformId = useGameFiltersState(state => state.filters.platformId);
+    const platformName = usePlatform(platformId)?.name;
+
     const heading = `${platformName ? platformName + " " : ""}${genreName ? genreName + " " : ""}Games`;
+
     return (
         <Heading as="h1" marginBottom={5}>
             {heading}

@@ -1,4 +1,4 @@
-// import React from "react";
+// import { JSX } from "react";
 // import { useData } from "./use-data.ts";
 // import { Endpoint } from "../enums/endpoints.enum.ts";
 // import { Game, GameFilters } from "../interfaces";

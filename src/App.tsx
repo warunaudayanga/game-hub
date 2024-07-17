@@ -1,14 +1,12 @@
-import React, { useState } from "react";
+import { JSX } from "react";
 import "./App.css";
 import { Grid, GridItem, HStack, Show, VStack } from "@chakra-ui/react";
 import { GameGrid, GenreList, NavBar } from "./components";
 import { PlatformSelector } from "./components/PlatformSelector.tsx";
-import { GameFilters } from "./interfaces";
 import { SortSelector } from "./components/SortSelector.tsx";
 import { GameHeading } from "./components/games/GameHeading.tsx";
 
-const App = (): React.JSX.Element => {
-    const [filters, setFilters] = useState<GameFilters>({});
+const App = (): JSX.Element => {
     return (
         <>
             <Grid
@@ -26,20 +24,11 @@ const App = (): React.JSX.Element => {
                 }}
             >
                 <GridItem area="header">
-                    <NavBar onSearch={search => setFilters({ ...filters, keyword: search })}></NavBar>
+                    <NavBar></NavBar>
                 </GridItem>
                 <Show above="lg">
-                    <GridItem
-                        area="aside"
-                        paddingX={5}
-                        mt={16}
-                        // // h="calc(100vh - 70px)"
-                        // overflowY="auto"
-                    >
-                        <GenreList
-                            selectedGenreId={filters.genreId}
-                            onSelectGenre={genre => setFilters({ ...filters, genreId: genre })}
-                        />
+                    <GridItem area="aside" paddingX={5} mt={16}>
+                        <GenreList />
                     </GridItem>
                 </Show>
                 <GridItem
@@ -49,18 +38,12 @@ const App = (): React.JSX.Element => {
                     // overflowY="auto"
                 >
                     <VStack h="100%" alignItems="start" paddingX={{ base: 3, md: 5 }}>
-                        <GameHeading filters={filters} />
+                        <GameHeading />
                         <HStack w="100%" justifyContent={{ base: "center", md: "start" }} spacing={5} marginBottom={5}>
-                            <PlatformSelector
-                                selectedPlatformId={filters.platformId}
-                                onSelectPlatform={platform => setFilters({ ...filters, platformId: platform?.id })}
-                            />
-                            <SortSelector
-                                selectedSortOption={filters.sortBy}
-                                onSort={sort => setFilters({ ...filters, sortBy: sort })}
-                            />
+                            <PlatformSelector />
+                            <SortSelector />
                         </HStack>
-                        <GameGrid filters={filters}></GameGrid>
+                        <GameGrid />
                     </VStack>
                 </GridItem>
             </Grid>
