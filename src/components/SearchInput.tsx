@@ -15,7 +15,10 @@ export const SearchInput = (): JSX.Element => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        if (location.pathname !== "/") setKeyword("");
+        if (location.pathname !== "/") {
+            setKeyword("");
+            setSearch(undefined);
+        }
     }, [location.pathname]);
 
     const handleSearch = (event: ChangeEvent<HTMLInputElement>): void => {
