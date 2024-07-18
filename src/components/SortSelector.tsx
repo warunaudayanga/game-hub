@@ -2,7 +2,7 @@ import { JSX } from "react";
 import { Button, Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react";
 import { BsChevronDown } from "react-icons/bs";
 import { SortOption } from "../interfaces";
-import { useGameFiltersState } from "../store/game-filter.state.ts";
+import { useGameFiltersState } from "../store";
 
 export const SortSelector = (): JSX.Element | null => {
     const sortOptions: SortOption[] = [

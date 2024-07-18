@@ -1,4 +1,4 @@
-import { SortBy } from "../types/sort-by.type.ts";
+import { SortBy } from "../types";
 
 export interface SortOption {
     label: string;

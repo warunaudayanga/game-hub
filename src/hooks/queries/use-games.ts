@@ -2,9 +2,9 @@
 import { InfiniteData, QueryFunctionContext, useInfiniteQuery, UseInfiniteQueryResult } from "@tanstack/react-query";
 import { Game, ListFetchResponse } from "../../interfaces";
 import { gameService } from "../../services";
-import { CACHE_KEY_GAMES } from "../../constants/constants.ts";
+import { CACHE_KEY_GAMES } from "../../constants";
 import ms from "ms";
-import { useGameFiltersState } from "../../store/game-filter.state.ts";
+import { useGameFiltersState } from "../../store";
 
 export const useGames = (
     pageSize: number,

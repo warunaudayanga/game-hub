@@ -7,34 +7,64 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="141e1bdd-58ef-4622-a69c-49d5054861f5" name="Changes" comment="stable 3">
-      <change afterPath="$PROJECT_DIR$/src/store/game-filter.state.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
+    <list default="true" id="141e1bdd-58ef-4622-a69c-49d5054861f5" name="Changes" comment="config">
+      <change afterPath="$PROJECT_DIR$/src/components/DefinitionItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/games/GameAttributes.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/games/GameScreenshots.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/games/GameTrailer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/enums/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/queries/use-game.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/queries/use-screenshots.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/queries/use-trailers.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/entities/game-screenshot.entity.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/entities/game-trailer.entity.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/entities/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/entities/publisher.entity.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/ErrorPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/GameDetailsPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/HomePage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ColorModeSwitch.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ColorModeSwitch.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Emoji.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Emoji.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ExpandableText.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PlatformIconList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PlatformIconList.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PlatformSelector.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PlatformSelector.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SearchInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchInput.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SortSelector.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SortSelector.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/CriticScore.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/CriticScore.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/games/GameCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/GameCard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/games/GameCardContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/GameCardContainer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/games/GameCardSkeleton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/GameCardSkeleton.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/games/GameGrid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/GameGrid.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/games/GameHeading.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/GameHeading.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/genre/GenreItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/genre/GenreItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/genre/GenreItemContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/genre/GenreItemContainer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/genre/GenreItemSkeleton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/genre/GenreItemSkeleton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/games/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/games/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/genre/GenreList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/genre/GenreList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/genre/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/genre/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/constants.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/queries/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/queries/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hooks/queries/use-games.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/queries/use-games.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/use-games.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/use-games.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/queries/use-genres.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/queries/use-genres.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/queries/use-platforms.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/queries/use-platforms.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/interfaces/game-filters.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/game-filters.interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/pagination.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/pagination.interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/game.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/entities/game.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/genre.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/entities/genre.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/hook.interfaces.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/platform.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/entities/platform.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/sort-options.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/sort-options.interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/game.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/game.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/genre.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/genre.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/http.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/http.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/platform.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/platform.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/game-filter.state.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/game-filter.state.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +116,7 @@
     <option name="defaultAccountId" value="b0bdd297-4de9-46cb-8cda-d34236f80282" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -104,7 +134,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "javascript.nodejs.core.library.configured.version": "20.12.1",
     "javascript.nodejs.core.library.typings.version": "20.12.14",
-    "last_opened_file_path": "C:/Workspace/Personal/Web/game-hub/src/hooks/queries",
+    "last_opened_file_path": "C:/Workspace/Personal/Web/game-hub/src/interfaces/entities",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -115,24 +145,25 @@
     "npm.build.executor": "Run",
     "npm.dev.executor": "Run",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "settings.nodejs",
+    "settings.editor.selected.configurable": "editing.templates",
     "ts.external.directory.path": "C:\\Workspace\\Personal\\Web\\game-hub\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Workspace\Personal\Web\game-hub\src\interfaces\entities" />
       <recent name="C:\Workspace\Personal\Web\game-hub\src\hooks\queries" />
+      <recent name="C:\Workspace\Personal\Web\game-hub\src\components\pages" />
       <recent name="C:\Workspace\Personal\Web\game-hub\src\data" />
       <recent name="C:\Workspace\Personal\Web\game-hub\src\services" />
-      <recent name="C:\Workspace\Personal\Web\game-hub\src\interfaces" />
-      <recent name="C:\Workspace\Personal\Web\game-hub\.idea" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Workspace\Personal\Web\game-hub\src\components" />
+      <recent name="C:\Workspace\Personal\Web\game-hub\src\interfaces\entities" />
+      <recent name="C:\Workspace\Personal\Web\game-hub\src" />
       <recent name="C:\Workspace\Personal\Web\game-hub\src\components\games" />
       <recent name="C:\Workspace\Personal\Web\game-hub\src\hooks\queries" />
-      <recent name="C:\Workspace\Personal\Web\game-hub\src\components\genre" />
-      <recent name="C:\Workspace\Personal\Web\game-hub\src" />
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
@@ -158,8 +189,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -196,7 +227,11 @@
       <workItem from="1720754386199" duration="1192000" />
       <workItem from="1720775142286" duration="28000" />
       <workItem from="1720777820694" duration="5838000" />
-      <workItem from="1721210009752" duration="7223000" />
+      <workItem from="1721210009752" duration="7436000" />
+      <workItem from="1721243188564" duration="5314000" />
+      <workItem from="1721276875804" duration="247000" />
+      <workItem from="1721281042852" duration="5526000" />
+      <workItem from="1721286815964" duration="6057000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -270,7 +305,23 @@
       <option name="project" value="LOCAL" />
       <updated>1720784045693</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Refactor - Manage state with Zustand">
+      <option name="closed" value="true" />
+      <created>1721217349764</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1721217349764</updated>
+    </task>
+    <task id="LOCAL-00011" summary="config">
+      <option name="closed" value="true" />
+      <created>1721217384160</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1721217384160</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,6 +378,8 @@
     <MESSAGE value="stable 2" />
     <MESSAGE value="Add react query and infinite pagination" />
     <MESSAGE value="stable 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="stable 3" />
+    <MESSAGE value="Refactor - Manage state with Zustand" />
+    <MESSAGE value="config" />
+    <option name="LAST_COMMIT_MESSAGE" value="config" />
   </component>
 </project>

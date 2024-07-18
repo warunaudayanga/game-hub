@@ -40,7 +40,7 @@ export const GameGrid = (): JSX.Element => {
                 // pullDownToRefreshContent={<h3 style={{ textAlign: "center" }}>&#8595; Pull down to refresh</h3>}
                 // releaseToRefreshContent={<h3 style={{ textAlign: "center" }}>&#8593; Release to refresh</h3>}
             >
-                <SimpleGrid w="100%" columns={{ sm: 1, md: 2, lg: 3, xl: 4 }} spacing={6}>
+                <SimpleGrid w="100%" columns={{ sm: 1, md: 2, lg: 3, xl: 4 }} spacing={6} p={2}>
                     {games?.pages.map((page, index) => (
                         <Fragment key={index}>
                             {Boolean(page.results.length) &&

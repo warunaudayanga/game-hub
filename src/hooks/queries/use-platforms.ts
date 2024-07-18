@@ -1,7 +1,7 @@
 import { useQuery, UseQueryResult } from "@tanstack/react-query";
 import { ListFetchResponse, Platform } from "../../interfaces";
 import { platformService } from "../../services";
-import { CACHE_KEY_PLATFORMS } from "../../constants/constants.ts";
+import { CACHE_KEY_PLATFORMS } from "../../constants";
 import { defaultPlatforms } from "../../data";
 import ms from "ms";
 

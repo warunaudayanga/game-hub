@@ -6,6 +6,7 @@ import { CriticScore } from "./CriticScore.tsx";
 import { getCroppedImageUrl } from "../../services";
 import gameSvg from "../../assets/game.svg";
 import { Emoji } from "../Emoji.tsx";
+import { Link } from "react-router-dom";
 
 interface Props {
     game: Game;
@@ -25,7 +26,7 @@ export const GameCard = ({ game }: Props): JSX.Element => {
                         </HStack>
                     </HStack>
                     <Heading fontSize="2xl" w="100%">
-                        {game.name}
+                        <Link to={`/games/${game.slug}`}>{game.name}</Link>
                     </Heading>
                 </VStack>
             </CardBody>

@@ -1,4 +1,4 @@
-import { SortBy } from "../types/sort-by.type.ts";
+import { SortBy } from "../types";
 import { create } from "zustand";
 import { mountStoreDevtool } from "simple-zustand-devtools";
 import { GameFilters } from "../interfaces";

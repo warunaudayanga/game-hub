@@ -2,16 +2,16 @@ import { JSX } from "react";
 import { Button, Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react";
 import { BsChevronDown } from "react-icons/bs";
 import { usePlatform, usePlatforms } from "../hooks";
-import { useGameFiltersState } from "../store/game-filter.state.ts";
+import { useGameFiltersState } from "../store";
 
-export const PlatformSelector = (): JSX.Element | null => {
+export const PlatformSelector = (): JSX.Element => {
     const platformId = useGameFiltersState(state => state.filters.platformId);
     const setPlatformId = useGameFiltersState(state => state.setPlatformId);
 
     const { platforms, error } = usePlatforms();
     const selectedPlatformName = usePlatform(platformId)?.name;
 
-    if (error) return null;
+    if (error) throw error;
 
     return (
         <Menu>

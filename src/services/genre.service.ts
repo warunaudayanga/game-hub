@@ -2,7 +2,7 @@
 
 import { createHttpService } from "./http.service.ts";
 import { Genre } from "../interfaces";
-import { Endpoint } from "../enums/endpoints.enum.ts";
+import { Endpoint } from "../enums";
 
 // export class GenreService extends HttpService<ListFetchResponse<Genre>> {
 //     constructor() {

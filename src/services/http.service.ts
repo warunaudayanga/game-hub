@@ -1,12 +1,11 @@
 // noinspection JSUnusedGlobalSymbols,Annotator
 
 import httpClient from "./http-client";
-import { ListFetchResponse, GetAllResponse } from "../interfaces";
+import { ListFetchResponse, GetAllResponse, Pagination } from "../interfaces";
 import { AxiosRequestConfig } from "axios";
-import { Pagination } from "../interfaces/pagination.interface.ts";
 
 export class HttpService<Entity> {
-    constructor(private endpoint: string) {}
+    constructor(protected endpoint: string) {}
 
     getAllWithCancel<T>(requestConfig?: AxiosRequestConfig): GetAllResponse<T> {
         const controller = new AbortController();

@@ -1,7 +1,7 @@
 import { useQuery, UseQueryResult } from "@tanstack/react-query";
 import { Genre, ListFetchResponse } from "../../interfaces";
 import { genreService } from "../../services";
-import { CACHE_KEY_GENRES } from "../../constants/constants.ts";
+import { CACHE_KEY_GENRES } from "../../constants";
 import { defaultGenres } from "../../data";
 import ms from "ms";
 

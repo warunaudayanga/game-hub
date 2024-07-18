@@ -5,9 +5,9 @@ import { Heading, List } from "@chakra-ui/react";
 import { GenreItemContainer } from "./GenreItemContainer.tsx";
 import { GenreItem } from "./GenreItem.tsx";
 import { GenreItemSkeleton } from "./GenreItemSkeleton.tsx";
-import { useGameFiltersState } from "../../store/game-filter.state.ts";
+import { useGameFiltersState } from "../../store";
 
-export const GenreList = (): JSX.Element | null => {
+export const GenreList = (): JSX.Element => {
     const { genres, isLoading, error } = useGenres();
     // const bg = useColorModeValue("white", "gray.800");
     const skeletons = [...Array.from(Array(20).keys()).map(i => i + 1)];
@@ -15,7 +15,7 @@ export const GenreList = (): JSX.Element | null => {
     const genreId = useGameFiltersState(state => state.filters.genreId);
     const setGenreId = useGameFiltersState(state => state.setGenreId);
 
-    if (error) return null;
+    if (error) throw error;
 
     return (
         <>
