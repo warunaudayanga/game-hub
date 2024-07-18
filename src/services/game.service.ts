@@ -10,7 +10,7 @@ export class GameService extends HttpService<Game> {
         super(Endpoint.GAMES);
     }
 
-    async getGame(slug: number | string): Promise<Game> {
+    async getGame(slug: string): Promise<Game> {
         const res = await httpClient.get<Game>(`${this.endpoint}/${slug}`);
         return res.data;
     }

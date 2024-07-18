@@ -4,6 +4,7 @@ export * from "./CriticScore";
 export * from "./GameHeading";
 export * from "./GameTrailer";
 export * from "./GameAttributes";
+export * from "./GameAttributesSkeleton";
 export * from "./GameScreenshots";
 export * from "./GameCardSkeleton";
 export * from "./GameCardContainer";

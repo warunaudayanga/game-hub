@@ -1,6 +1,6 @@
 import { JSX } from "react";
 import { useTrailers } from "../../hooks";
-import { Box } from "@chakra-ui/react";
+import { Box, Skeleton } from "@chakra-ui/react";
 
 interface Props {
     gameId: number;
@@ -9,7 +9,7 @@ interface Props {
 export const GameTrailer = ({ gameId }: Props): JSX.Element | null => {
     const { trailers, isLoading, error } = useTrailers(gameId);
 
-    if (isLoading) return null;
+    if (isLoading) return <Skeleton h={300} />;
 
     if (error) throw error;
 
